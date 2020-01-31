@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--catalogue page for online store-->
+    <title>Catalogue</title>
+    <meta charset="utf-8" />
+    <!--Bootstrap and external styling used for all webpages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="hyperSportsStyles.css" rel="stylesheet" type="text/css">
+    <!--Importing JQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!--img made responsive and animated to allow expansion upon hovering over them. Customised unordered list to square list-->
+    <script src="hyperSportsScript.js" async></script>
+    <style>
+    .img-fluid {
+        width: 100%;
+        height: 200px;
+        box-shadow: 3px 3px;
+    }
+
+    img:hover {
+        opacity: 0.5;
+        transform: scale(1.1);
+
+    }
+
+    ul {
+        padding: 15px;
+        margin: 15px;
+        list-style-type: square;
+    }
+
+    button.addCart {
+        padding: 2px;
+        margin: 2px;
+        border-style: inset;
+        border-color: black;
+    }
+    </style>
+</head>
+
+<body id="body">
+    <!--bootstraps grid is used for the layout of the webpage-->
+    <div class="container">
+        <header>
+            <h1 id="myCatalogue">Catalogue</h1>
+        </header>
+        <!--nav bar to direct to other pages-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="about.html">About</a>
+                <a class="nav-item nav-link" href="cart.html">Cart</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <!--table-hover is used to enable a hover state on the table-->
+        <table class="table">
+            <thead>
+                <tr>
+                    <!--colspan is used to specify that the there will be 6 cells-->
+                    <th colspan="6" id="listItems">List items:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <div class="shop-items">
+                    <tr>
+                        <th scope="row">Gym</th>
+                        <!--images were changed to thumbnails to give a rounded 1px border appearance.
+                            Images are made responsive using .img-fluid by applying width 100% and height:auto 
+                            scaling them with the parent element.Add details to images using <details> syntax and then used an unordered list to describe it.-->
+                        <!--each item contained in shop-item div with unique shop-item-title and shop-item-price. Also shop-item-button for adding to cart-->
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/treadmill.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Treadmills</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">5</span></li>
+                                            <li><span class="shop-item-price">R1500</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/bench.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Exercise Benches</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">20</span></li>
+                                            <li><span class="shop-item-price">R500</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/dumbells.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Dumbells</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">100</span></li>
+                                            <li><span class="shop-item-price">R50</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/exercise-bike.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Exercise bikes</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">10</span></li>
+                                            <li><span class="shop-item-price">R1200</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/home-gym.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Home gyms</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">5</span></li>
+                                            <li><span class="shop-item-price">R3000</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                    </tr>
+                    <tr>
+                        <th scope="row">Sport</th>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/rugby-ball.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Rugby balls</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">200</span></li>
+                                            <li><span class="shop-item-price">R100</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/rugby-boot.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Rugby Boots</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">50</span></li>
+                                            <li><span class="shop-item-price">R800</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/soccer-jersey.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Soccer jerseys</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">250</span></li>
+                                            <li><span class="shop-item-price">R200</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/tennis-racket.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Tennis rackets</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">90</span></li>
+                                            <li><span class="shop-item-price">R300</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                        <div class="shop-item">
+                            <td style="text-align: center"><img src="images/basketball.jpg" class="img-thumbnail img-fluid shop-item-image">
+                                <span class="shop-item-title">Basket balls</span>
+                                <div class="shop-item-details">
+                                    <details>
+                                        <summary>Details</summary>
+                                        <ul>
+                                            <li><span class="shop-item-quantity">220</span></li>
+                                            <li><span class="shop-item-price">R80</span></li>
+                                        </ul>
+                                    </details>
+                                    <button class="addCart shop-item-button">Add to cart</button>
+                                </div>
+                            </td>
+                        </div>
+                    </tr>
+                </div>
+            </tbody>
+        </table>
+        <section>
+            <h2>Quick add to cart</h2>
+            <!--Cart row containing item title, price and quantity -->
+            <div class="row cart-row">
+                <span class="col-3 cart-item cart header">ITEM</span>
+                <span class="col-3 cart-price cart header">PRICE</span>
+                <span class="col-3 cart-quantity cart header">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <!--cart total for adding up total cost of products -->
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">R0</span>
+            </div>
+            <!--sends the total to the cart where it is retrieved using sessionStorage getItem-->
+            <button class="btn-sendToCart">Send to cart</button>
+            <button id="goCartButton">Go to cart</button>
+        </section>
+        <br>
+        <footer>
+            <hr>hyperSports</footer>
+    </div>
+</body>
+
+</html>

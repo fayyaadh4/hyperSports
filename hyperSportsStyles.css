@@ -1,0 +1,129 @@
+/*External stylesheet used to override bootstrap styling*/
+body {
+    /*background-color: aliceblue. animation was added to change colors between aliceblue and gainsboro with an aniation duration of 10s*/
+    padding: 5px;
+    margin: 15px;
+    background-color: aliceblue;
+    animation-name: bodyAnimation;
+    animation-duration: 10s;
+}
+
+@keyframes example {
+    from {
+        background-color: gainsboro;
+    }
+
+    to {
+        background-color: aliceblue;
+    }
+}
+
+/*the headers of all pages were distinguished by changing the background color to lavender blue. also a border was placed around it.*/
+header {
+    text-align: center;
+    padding: 15px;
+    margin: 25px;
+    border: solid;
+    background-color: lavenderblush;
+}
+
+/*the paragraphs of the headers font-size was changed as well as its color*/
+header p {
+    font-size: 12px;
+    color: limegreen;
+    font-style: oblique;
+}
+
+/*review stars color was changed to orange*/
+.checked {
+    color: orange;
+}
+
+/*article was used to apply styling to the review section*/
+article {
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: mediumspringgreen;
+    font-size: 14px;
+    font-style: italic;
+    color: indigo;
+}
+
+section p {
+    font-size: 14px;
+}
+
+/*padding and borders were applied to all images*/
+img {
+    float: left;
+    padding: 1px;
+    margin: 4px;
+    border-style: dotted;
+    border-color: black;
+}
+
+/*articles font size was changed to distinguish it from other text*/
+article p {
+    font-size: 16px;
+}
+
+/*a brightness filter was applied to image on cover page to make it stand out*/
+img.rugby {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 250px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    filter: brightness(200%);
+}
+
+section.motives {
+    text-align: center;
+}
+
+section.motives p {
+    font-style: normal;
+}
+
+/*adding padding and border to button*/
+button {
+    padding: 10px;
+    margin: 15px;
+    border-style: solid;
+    border-color: black;
+}
+
+/*aside textbox was floated to left of article textbox on about page*/
+aside {
+    background-color: powderblue;
+    padding: 5px;
+    float: left;
+}
+
+/*borders, padding and background color was added to the table on the catalogue page*/
+table,
+th,
+td {
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+/*the list was customised*/
+ul {
+    padding: 15px;
+    margin: 15px;
+    list-style-type: circle;
+}
+
+footer {
+    font-family: cursive;
+    text-align: right;
+    margin: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--about page for online store-->
+    <title>About</title>
+    <meta charset="utf-8" />
+    <!--Bootstrap and external styling used for all webpages-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="hyperSportsStyles.css" rel="stylesheet" type="text/css">
+    <!--Importing JQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <!--external JS file-->
+    <script src="hyperSportsScript.js" async></script>
+    <!--internal styling being used to override bootstrap and external styling-->
+    <style>
+    section {
+        background-color: mintcream;
+        padding: 5px;
+        margin: 15px;
+    }
+
+    article {
+        background-color: cornsilk;
+        padding: 5px;
+        margin: 15px;
+    }
+
+    .panel {
+        display: none;
+    }
+
+    .panel.active {
+        display: block;
+    }
+
+    #contactFayyaadh {
+        list-style-type: none;
+        display: inline-block;
+        background: rgb(224, 193, 193);
+        margin: 0;
+        padding: 3px 10px;
+        border-radius: 10px 10px 0 0;
+        color: #fff;
+        font-weight: 200;
+        cursor: pointer;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>About us</h1>
+            <p>We aim to address all sporting as required by our customers.</p>
+        </header>
+        <!--nav bar to direct to other pages-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="catalogue.html">Catalogue</a>
+                <a class="nav-item nav-link" href="cart.html">Cart</a>
+                <a class="nav-item nav-link" href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <!--font-color changed using inline styling-->
+        <section class="row col-8 offset-md-2" style="text-align: center; color: seagreen">
+            <p>At hyperSports, we believe that our <b>customers</b> needs are of utmost important. In order for us to ensure that our <b>customers</b> remain <b>happy</b> and that our <b>quality</b> is top standard, <em>extensive research</em> is done whereby our team searches for the <em>latest trends</em> in <b>sporting equipment</b> and <b>industry machinery</b> to provide only the best of products. Our company also places maximum emphasis on <b>customer service</b> and in doing so we are always open for <em>constructive criticism</em>. So if you have anything that you wish to inform us about, let us know in our <a href="contact.html">contacts</a> section.</p>
+            <br>
+            <p>Our products that we have available ranges from all your <b>gym equipment</b> such as dumblells, treadmill, home gym, etc. to all your <b>sporting needs</b> whether it be for hobbies or extra-mural activity. If you need anything that is not on our list, feel free to send us an email and we shall try our best to acquire it.</p>
+            <br>
+            <p>Lastly, our <b>customer service</b> promises are promoted by <b>providing delivery</b> anywhere within our city because buying from us doesn't have to be an unnecessary ordeal. On top of that, we also offer a <b>pay on arrival</b> as another way of proving our convenience. </p>
+        </section>
+        <div class="row">
+            <article class="col-8">
+                <!--animations on Founder section. when hovered onto font size increases and opacity styling added ensuring its easier for user to read-->
+                <h3 id="founderHeading">The Founder</h3>
+                <p id="founderParagraph"><img src="images/Fayyaadh.jpg" alt="Fayyaadh Naidoo photo" width="80" height="80" style="filter: grayscale(50%)">The founder of <b>hyperSports</b> is a guy born and bred in Cape Town, by the name of <b>Fayyaadh Naidoo</b>. He started as a young boy selling whatever sports equipment people would be interested in, out of his backyard. He then decided to grow his business and what better way than to go online. This was the best decision he has ever made. Through the internet, his company has managed to span all across the globe, reaching far and wide. However, he still remains <i>humbled</i> by this, and for that reason he has not become a sell-out and still believes that the <i>customers satisfaction</i> is top priority. He aso encourages customers to email him directly if they have any needs or just want to talk.</p>
+            </article>
+            <br>
+            <aside class="col-3">
+                <!--JQuery function for drop down menu of contact links-->
+                <div id="accordion" class="tab-panel">
+                    <!--external links to LinkedIn page as well as email. new page opens up due to target="_blank" syntax being used.-->
+                    <h4 id="contactFayyaadh">Link to contact Fayyaadh:</h4>
+                    <ul id="contactLinks" class="panel">
+                        <li><a href="https://www.linkedin.com/in/fayyaadh-naidoo-1ab892100/" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:fayyaadh.naidoo@gmail.com" target="_blank">Email</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <br>
+        <footer>
+            <hr>hyperSports</footer>
+    </div>
+</body>
+
+</html>
